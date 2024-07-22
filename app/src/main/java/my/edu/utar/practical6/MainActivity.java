@@ -18,18 +18,18 @@ public class MainActivity extends AppCompatActivity {
 
         mySQLiteAdapter = new SQLiteAdapter(this);
         mySQLiteAdapter.openToWrite();
-        mySQLiteAdapter.insert("Jason");
-        mySQLiteAdapter.insert("Rocky");
-        mySQLiteAdapter.insert("Susan");
-        mySQLiteAdapter.insert("Diana");
-        mySQLiteAdapter.insert("John");
-        mySQLiteAdapter.insert("Johnathan");
-        mySQLiteAdapter.insert("Derek");
-        mySQLiteAdapter.insert("Daniel");
-        mySQLiteAdapter.insert("Peter");
-        mySQLiteAdapter.insert("Tammy");
-        mySQLiteAdapter.insert("Jenna");
-        mySQLiteAdapter.insert("Joanne");
+        mySQLiteAdapter.insert("Jason", "CS", 20);
+        mySQLiteAdapter.insert("Rocky", "IA", 19);
+        mySQLiteAdapter.insert("Susan", "IB", 20);
+        mySQLiteAdapter.insert("Diana", "CN", 21);
+        mySQLiteAdapter.insert("John", "CN", 20);
+        mySQLiteAdapter.insert("Johnathan", "IA", 20);
+        mySQLiteAdapter.insert("Derek", "IB", 21);
+        mySQLiteAdapter.insert("Daniel", "CS", 19);
+        mySQLiteAdapter.insert("Peter", "CN", 19);
+        mySQLiteAdapter.insert("Tammy", "CS", 21);
+        mySQLiteAdapter.insert("Jenna", "IA", 22);
+        mySQLiteAdapter.insert("Joanne", "IB", 21);
         mySQLiteAdapter.close();
 
         mySQLiteAdapter.openToRead();
